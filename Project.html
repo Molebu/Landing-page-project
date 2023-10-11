@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        text-align: center;
+
+      }
+      h2 {
+        text-align: center;
+        font-weight: thin;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+      button {
+         padding: 30px 40px;
+        margin: 40px auto;
+        display: block;
+        padding: 20px;
+        font-size: medium;
+        border-color: goldenrod;
+        color: goldenrod;
+        border-radius: 30px;
+        box-shadow: 0 5px 10px 0;
+        transition: all 200ms ease-in-out;
+        line-height: normal;
+      }
+      body {
+        background: #e0ffcd; 
+      }
+      button:hover {
+        background: goldenrod;
+        color: orangered;
+      }
+      p {
+        text-align: center;
+        font-size: larger;
+      }
+      li {
+        text-align: center;
+        font-size: large;
+        }
+        
+        .one{
+          color: #49beb7;
+        }
+.two {
+  color:#eb2632 ;
+}
+.three {
+color: #240747;
+}
+.four {
+color: #680747;
+}
+.five {
+color:#ff007b ;
+}
+.closing {
+  text-align: center;
+  font-size: smaller;
+}
+.link {
+  text-align: center;
+  display: block;
+}
+    </style>
+  </head>
+  <body>
+    <h1>
+      <strong>The Sport Netball</strong>
+    </h1>
+    <img
+      src="https://media.istockphoto.com/id/495925852/vector/netball-players-jumping-for-ball-silhouettes.jpg?s=612x612&w=0&k=20&c=yPNbf3kWSBijh7Qwu4gGiY3QlKfQiOOhpEmFfLOjn8s="
+      width="220"
+    />
+    <h2>
+      <strong> <em>Netball is life, everything else is just a game...</em></strong>
+    </h2>
+    <hr />
+
+    <p><strong>Interesting facts about Netball</strong></p>
+    
+    <li> <a class="one"> 
+      England invented Netball in 1895.</a></li>
+    </br> <li> <a class="two">There are over 20 million netball players worldwide.</a></li>
+</br> <li> <a class= "three">Netball is not an Olympic sport.</a></li>
+</br> <li><a class= "four">A netball game is played for an hour.</a></li>
+</br> <li> <a class= "five">There are seven netball player positions.</a></li>
+</br> </br> <a class="link"
+href="https://cometoplay.co.uk/interesting-facts/facts-about-netball/"> click <u>here</u> for more info</a>
+    
+    <button> What's your favourite sport?</button>
+   <div class="closing">
+<span class="closing"> Coded by Moleboheng Molatuli </span> </div>
+
+<script>
+  function whatsyourfavouriteSport() {
+    let sport= prompt("What is your favourite sport")
+    if (sport === "netball") {
+      alert ("GREAT CHOICE!");
+     } else {
+      alert ("That's not bad I guess!");
+  }
+}
+let sportButton= document.querySelector("button");
+sportButton.addEventListener("click", whatsyourfavouriteSport);
+
+</script>
+  </body>
+</html>
